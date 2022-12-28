@@ -10,34 +10,70 @@ Using NCC and Pyramid strategy to deal with the template matching homework
 
 
 ## 1.Import library
-    import os
-    import cv2
-    import math
-    import datetime
-    import numpy as np
-    import pandas as pd
-    import matplotlib.image as img
-    import matplotlib.pyplot as plt
-    from google.colab.patches import cv2_imshow
+``` python
+import os
+import cv2
+import math
+import datetime
+import numpy as np
+import pandas as pd
+import matplotlib.image as img
+import matplotlib.pyplot as plt
+from google.colab.patches import cv2_imshow
+```
 
 ## 2.Read the images
 *  Tenplate images are in file : [pattern](https://github.com/podo47/Template-Matching/tree/main/pattern)
-  *  Template_circle
-  *  Template_cross
-  *  Template_BorderCircle
-  *  Template_BorderCross
+    *  Template_circle
+    *  Template_cross
+    *  Template_BorderCircle
+    *  Template_BorderCross
 *  Source images are in file : [circle]() or [cross]()
-  *  Panel{ 1-4 }_circle{ 1-4 }
-  *  Panel{ 1-4 }_cross{ 1-4 }
+    *  Panel{ 1-4 }_circle{ 1-4 }
+    *  Panel{ 1-4 }_cross{ 1-4 }
   
 ## 3.Template matching
 **Part 1 : Non-pyramid**
+
+Case 1 : Circle
+``` python
+# Read source
+circle_ori = cv2.imread('/content/drive/MyDrive/Matching/cross/Panel1_cross2.bmp')
+# Apply a "median" blur to the image
+blurred = cv2.medianBlur(circle_ori,9)
+# Template matching
+'''
+cir_match(src,temp,temp_border,draw)
+src : Source image
+temp : Template image
+temp_border : Border template image
+draw : Image need to be drawn the matching position
+'''
+circle = cir_match(blurred,temp_cir,temp_border_cir,circle_ori)
+```
+
+Case 2 : Cross
+``` python
+# Read source
+cross_ori = cv2.imread('/content/drive/MyDrive/Matching/cross/Panel1_cross2.bmp') 
+# Apply a "median" blur to the image
+blurred_cro = cv2.medianBlur(cross_ori,9)
+# Template matching
+'''
+cro_match(src,temp,temp_border,draw)
+src : Source image
+temp : Template image
+temp_border : Border template image
+draw : Image need to be drawn the matching position
+'''
+cross = cro_match(blurred_cro,temp_cro,temp_border_cro,cross_ori)
+```
 
    (1)   Scan and calculate NCC score through whole source image
    
    (2)   Find the highest NCC score and record the corresponding coordinate
    
-   (3)   Draw the matching position on the picture ( Both border box and center pattern )
+   (3)   Draw the matching position on the image ( Both border box and center pattern )
    
    (4)   Calculate the distance between the center position of border box and center pattern ( circle or cross ) in the image
    
@@ -51,13 +87,49 @@ Using NCC and Pyramid strategy to deal with the template matching homework
 
 **Part 2 : Pyramid**
 
+Case 1 : Circle
+``` python
+# Read source
+circle_ori = cv2.imread('/content/drive/MyDrive/Matching/circle/Panel1_circle1.bmp')
+
+# Apply a "median" blur to the image 
+blurred = cv2.medianBlur(circle_ori,9)
+
+# Template matching
+'''
+cir_match_p(src,temp,temp_border,draw)
+src : Source image
+temp : Template image
+temp_border : Border template image
+draw : Image need to be drawn the matching position
+'''
+circle = cir_match_p(blurred,temp_cir,temp_border_cir,circle_ori)
+```
+
+Case 2 : Cross
+``` python
+# Read source
+cross_ori = cv2.imread('/content/drive/MyDrive/Matching/cross/Panel1_cross1.bmp') 
+# Apply a "median" blur to the image
+blurred_cro = cv2.medianBlur(cross_ori,9)
+# Template matching
+'''
+cro_match_p(src,temp,temp_border,draw)
+src : Source image
+temp : Template image
+temp_border : Border template image
+draw : Image need to be drawn the matching position
+'''
+cross = cro_match_p(blurred_cro,temp_cro,temp_border_cro,cross_ori)
+```
+
    (1)   Build pyramid according to the max leval ( default = 10 )
    
    (2)   Scan and calculate NCC score through whole source image ( Through all elements in pyramid )
    
    (3)   Find the highest NCC score and record the corresponding coordinate
    
-   (4)   Draw the matching position on the picture ( Both border box and center pattern )
+   (4)   Draw the matching position on the image ( Both border box and center pattern )
    
    (5)   Calculate the distance between the center position of border box and center pattern ( circle or cross ) in the image
    
@@ -100,9 +172,12 @@ Using NCC and Pyramid strategy to deal with the template matching homework
 
 3. Result image ( show only 1 image from each group )
   * Circle
-  <img src="https://github.com/podo47/Template-Matching/blob/main/distance.png" width="400" height="200" /><br/>
+  
+  <img src="https://github.com/podo47/Template-Matching/blob/main/match_circle/P1_circle1.png" width="432" height="238" /><br/>
+  
   * Cross
-  <img src="https://github.com/podo47/Template-Matching/blob/main/distance.png" width="400" height="200" /><br/>
+  
+  <img src="https://github.com/podo47/Template-Matching/blob/main/match_cross/P1_cross1.png" width="432" height="238" /><br/>
   
 **Part 2 : Pyramid**
 1. Average consume time 
@@ -152,7 +227,11 @@ Using NCC and Pyramid strategy to deal with the template matching homework
 |Panel4_cross4|5.385164807134504 |
 
 3. Result image ( show only 1 image from each group )
+
   * Circle
-  <img src="https://github.com/podo47/Template-Matching/blob/main/distance.png" width="400" height="200" /><br/>
+  
+  <img src="https://github.com/podo47/Template-Matching/blob/main/match_circle_p/P1_circle1.png" width="432" height="238" /><br/>
+  
   * Cross
-  <img src="https://github.com/podo47/Template-Matching/blob/main/distance.png" width="400" height="200" /><br/>
+  
+  <img src="https://github.com/podo47/Template-Matching/blob/main/match_cross_p/P1_cross1.png" width="432" height="238" /><br/>
