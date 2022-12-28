@@ -255,3 +255,22 @@ cross = cro_match_p(blurred_cro,temp_cro,temp_border_cro,cross_ori)
   * Cross
   
   <img src="https://github.com/podo47/Template-Matching/blob/main/match_cross_p/P1_cross1.png" width="432" height="238" /><br/>
+  
+## 5. Reference
+[1] Template matching
+
+https://www.kaggle.com/code/iamarjunchandra/template-matching-by-normalised-cross-correlation
+
+[2] [Python] OpenCV matchTemplate
+
+https://zwindr.blogspot.com/2017/02/python-opencv-matchtemplate.html
+
+[3] opencv+python实现图像匹配
+
+https://blog.csdn.net/zhuisui_woxin/article/details/84400439
+
+[4] Pyramid
+
+https://stackoverflow.com/questions/29605119/fast-template-matching-using-pyramids-in-python
+
+
