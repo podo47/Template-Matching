@@ -63,7 +63,7 @@ Using NCC and Pyramid strategy to deal with the template matching homework
    
    (6)   Save all results
 - Distance ( Group by different pattern : circle or cross )
-  - [File](main/distance.png) : match_circle_p/circle_pyramid_dis.csv
+  - [File](main/match_circle_p/circle_pyramid_dis.csv) : match_circle_p/circle_pyramid_dis.csv
   - [File]() : match_cross_p/cross_pyramid_dis.csv
 - Result images 
   - [File]() : match_circle_p/P{ 1-4 }_circle{ 1-4 }
