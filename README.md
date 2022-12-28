@@ -1,7 +1,6 @@
 # Template-Matching
 Using NCC and Pyramid strategy to deal with the template matching tasks
 
-[Click to read the code](https://github.com/podo47/Template-Matching/blob/main/Template_matching.ipynb) 
 - [x] Calculate Normalized Correlation Coefficient (NCC)
 - [x] Speed up with Pyramid strategy
 - [x] Apply median filter to the image for better performance
@@ -12,6 +11,8 @@ Using NCC and Pyramid strategy to deal with the template matching tasks
   
    <img src="https://github.com/podo47/Template-Matching/blob/main/distance.png" width="400" height="200" /><br/>
 
+[Click to read the code](https://github.com/podo47/Template-Matching/blob/main/Template_matching.ipynb)
+--------------
 
 ## 1.Import library
 ``` python
