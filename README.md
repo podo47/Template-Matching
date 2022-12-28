@@ -48,3 +48,111 @@ Using NCC and Pyramid strategy to deal with the template matching homework
 - Result images 
   - [File]() : match_circle/P{ 1-4 }_circle{ 1-4 }
   - [File]() : match_cross/P{ 1-4 }_cross{ 1-4 }
+
+**Part 2 : Pyramid**
+
+   (1)   Build pyramid according to the max leval ( default = 10 )
+   
+   (2)   Scan and calculate NCC score through whole source image ( Through all elements in pyramid )
+   
+   (3)   Find the highest NCC score and record the corresponding coordinate
+   
+   (4)   Draw the matching position on the picture ( Both border box and center pattern )
+   
+   (5)   Calculate the distance between the center position of border box and center pattern ( circle or cross ) in the image
+   
+   (6)   Save all results
+- Distance ( Group by different pattern : circle or cross )
+  - [File](main/distance.png) : match_circle_p/circle_pyramid_dis.csv
+  - [File]() : match_cross_p/cross_pyramid_dis.csv
+- Result images 
+  - [File]() : match_circle_p/P{ 1-4 }_circle{ 1-4 }
+  - [File]() : match_cross_p/P{ 1-4 }_cross{ 1-4 }
+
+## 4. Result
+**Part 1 : Non-pyramid**
+1. Average consume time 
+  * Circle - 0 days 00:24:43.240662375
+  * Cross - 0 days 00:25:41.053639312
+2. Distance
+  * Circle
+  
+  * Cross
+
+|Image      |Distance          |
+|-------------|------------------|
+|Panel1_cross1|12.206555615733702|
+|Panel1_cross2|17.08800749063506 |
+|Panel1_cross3|16.278820596099706|
+|Panel1_cross4|10.770329614269007|
+|Panel2_cross1|4.47213595499958  |
+|Panel2_cross2|10.295630140987   |
+|Panel2_cross3|24.166091947189145|
+|Panel2_cross4|11.40175425099138 |
+|Panel3_cross1|14.560219778561036|
+|Panel3_cross2|15.811388300841896|
+|Panel3_cross3|3.1622776601683795|
+|Panel3_cross4|15.231546211727817|
+|Panel4_cross1|3.605551275463989 |
+|Panel4_cross2|7.0710678118654755|
+|Panel4_cross3|13.416407864998739|
+|Panel4_cross4|5.385164807134504 |
+
+3. Result image ( show only 1 image from each group )
+  * Circle
+  <img src="https://github.com/podo47/Template-Matching/blob/main/distance.png" width="400" height="200" /><br/>
+  * Cross
+  <img src="https://github.com/podo47/Template-Matching/blob/main/distance.png" width="400" height="200" /><br/>
+  
+**Part 2 : Pyramid**
+1. Average consume time 
+  * Circle - 0 days 00:00:00.749987812
+  * Cross - 0 days 00:00:00.713385562
+2. Distance
+  * Circle
+  
+|Image       |Distance          |
+|-------------|------------------|
+|Panel1_circle1|6.324555320336759 |
+|Panel1_circle2|5.0990195135927845|
+|Panel1_circle3|3.1622776601683795|
+|Panel1_circle4|13.341664064126334|
+|Panel2_circle1|7.810249675906654 |
+|Panel2_circle2|8.54400374531753  |
+|Panel2_circle3|2.8284271247461903|
+|Panel2_circle4|11.704699910719626|
+|Panel3_circle1|8.54400374531753  |
+|Panel3_circle2|14.142135623730951|
+|Panel3_circle3|17.26267650163207 |
+|Panel3_circle4|17.0              |
+|Panel4_circle1|4.242640687119285 |
+|Panel4_circle2|7.810249675906654 |
+|Panel4_circle3|10.198039027185569|
+|Panel4_circle4|13.601470508735444|
+
+  * Cross
+
+|Image      |Distance          |
+|-------------|------------------|
+|Panel1_cross1|11.40175425099138 |
+|Panel1_cross2|16.15549442140351 |
+|Panel1_cross3|16.278820596099706|
+|Panel1_cross4|10.770329614269007|
+|Panel2_cross1|4.123105625617661 |
+|Panel2_cross2|10.295630140987   |
+|Panel2_cross3|23.769728648009426|
+|Panel2_cross4|10.44030650891055 |
+|Panel3_cross1|14.560219778561036|
+|Panel3_cross2|15.524174696260024|
+|Panel3_cross3|4.123105625617661 |
+|Panel3_cross4|15.231546211727817|
+|Panel4_cross1|3.605551275463989 |
+|Panel4_cross2|7.0710678118654755|
+|Panel4_cross3|13.416407864998739|
+|Panel4_cross4|5.385164807134504 |
+
+3. Result image ( show only 1 image from each group )
+  * Circle
+  <img src="https://github.com/podo47/Template-Matching/blob/main/distance.png" width="400" height="200" /><br/>
+  * Cross
+  <img src="https://github.com/podo47/Template-Matching/blob/main/distance.png" width="400" height="200" /><br/>
