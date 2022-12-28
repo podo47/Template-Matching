@@ -83,12 +83,6 @@ cross = cro_match(blurred_cro,temp_cro,temp_border_cro,cross_ori)
    (4)   Calculate the distance between the center position of border box and center pattern ( circle or cross ) in the image
    
    (5)   Save all results
-- Distance ( Group by different pattern : circle or cross )
-  - [File(Circle)](https://github.com/podo47/Template-Matching/blob/main/match_circle/match_circle_dis.csv) : match_circle/match_circle_dis.csv
-  - [File(Cross)](https://github.com/podo47/Template-Matching/blob/main/match_cross/match_cross_dis.csv) : match_cross/match_cross_dis.csv
-- Result images 
-  - [File(Circle)](https://github.com/podo47/Template-Matching/tree/main/match_circle) : match_circle/P{ 1-4 }_circle{ 1-4 }
-  - [File(Cross)](https://github.com/podo47/Template-Matching/tree/main/match_cross) : match_cross/P{ 1-4 }_cross{ 1-4 }
 
 **Part 2 : Pyramid**
 
@@ -139,16 +133,14 @@ cross = cro_match_p(blurred_cro,temp_cro,temp_border_cro,cross_ori)
    (5)   Calculate the distance between the center position of border box and center pattern ( circle or cross ) in the image
    
    (6)   Save all results
-- Distance ( Group by different pattern : circle or cross )
-  - [File(Circle)](https://github.com/podo47/Template-Matching/blob/main/match_circle_p/circle_pyramid_dis.csv) : match_circle_p/circle_pyramid_dis.csv
-  - [File(Cross)](https://github.com/podo47/Template-Matching/blob/main/match_cross_p/cross_pyramid_dis.csv) : match_cross_p/cross_pyramid_dis.csv
-- Result images 
-  - [File(Circle)](https://github.com/podo47/Template-Matching/tree/main/match_circle_p) : match_circle_p/P{ 1-4 }_circle{ 1-4 }
-  - [File(Cross)](https://github.com/podo47/Template-Matching/tree/main/match_cross_p) : match_cross_p/P{ 1-4 }_cross{ 1-4 }
 
 ## 4. Result
 
 * [All distance record](https://github.com/podo47/Template-Matching/blob/main/distance_all.csv)
+* [Result : Non-pyramid Circle](https://github.com/podo47/Template-Matching/tree/main/match_circle)
+* [Result : Non-pyramid Cross](https://github.com/podo47/Template-Matching/tree/main/match_cross)
+* [Result : Pyramid Circle](https://github.com/podo47/Template-Matching/tree/main/match_circle_p)
+* [Result : Pyramid Cross](https://github.com/podo47/Template-Matching/tree/main/match_cross_p)
 
 **Part 1 : Non-pyramid**
 1. Average consume time 
