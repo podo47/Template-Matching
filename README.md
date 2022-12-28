@@ -1,5 +1,6 @@
 # Template-Matching
 Using NCC and Pyramid strategy to deal with the template matching homework
+[Click](https://github.com/podo47/Template-Matching/blob/main/Template_matching.ipynb) to read the code
 - [x] Calculate Normalized Correlation Coefficient (NCC)
 - [x] Speed up with Pyramid strategy
 - [x] Draw the matching position on the picture
