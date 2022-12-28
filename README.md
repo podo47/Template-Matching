@@ -21,7 +21,7 @@ Using NCC and Pyramid strategy to deal with the template matching homework
     from google.colab.patches import cv2_imshow
 
 ## 2.Read the images
-*  Tenplate images are in file : [pattern]()
+*  Tenplate images are in file : [pattern](https://github.com/podo47/Template-Matching/tree/main/pattern)
   *  Template_circle
   *  Template_cross
   *  Template_BorderCircle
