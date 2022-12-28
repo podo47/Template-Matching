@@ -147,6 +147,9 @@ cross = cro_match_p(blurred_cro,temp_cro,temp_border_cro,cross_ori)
   - [File(Cross)](https://github.com/podo47/Template-Matching/tree/main/match_cross_p) : match_cross_p/P{ 1-4 }_cross{ 1-4 }
 
 ## 4. Result
+
+* [All distance record](https://github.com/podo47/Template-Matching/blob/main/distance_all.csv)
+
 **Part 1 : Non-pyramid**
 1. Average consume time 
   * Circle - 0 days 00:24:43.240662375
