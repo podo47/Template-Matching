@@ -1,0 +1,18 @@
+Circle (Non-pyramid),,Circle (Pyramid),,,Cross (Non-pyramid),,Cross (Pyramid),
+Image,Distance,Image,Distance,,Image,Distance,Image,Distance
+Panel1_circle1,6.32455532,Panel1_circle1,6.32455532,,Panel1_cross1,12.20655562,Panel1_cross1,11.40175425
+Panel1_circle2,5.099019514,Panel1_circle2,5.099019514,,Panel1_cross2,17.08800749,Panel1_cross2,16.15549442
+Panel1_circle3,3.16227766,Panel1_circle3,3.16227766,,Panel1_cross3,16.2788206,Panel1_cross3,16.2788206
+Panel1_circle4,13.34166406,Panel1_circle4,13.34166406,,Panel1_cross4,10.77032961,Panel1_cross4,10.77032961
+Panel2_circle1,7.810249676,Panel2_circle1,7.810249676,,Panel2_cross1,4.472135955,Panel2_cross1,4.123105626
+Panel2_circle2,8.062257748,Panel2_circle2,8.544003745,,Panel2_cross2,10.29563014,Panel2_cross2,10.29563014
+Panel2_circle3,2.828427125,Panel2_circle3,2.828427125,,Panel2_cross3,24.16609195,Panel2_cross3,23.76972865
+Panel2_circle4,11.70469991,Panel2_circle4,11.70469991,,Panel2_cross4,11.40175425,Panel2_cross4,10.44030651
+Panel3_circle1,8.544003745,Panel3_circle1,8.544003745,,Panel3_cross1,14.56021978,Panel3_cross1,14.56021978
+Panel3_circle2,14.14213562,Panel3_circle2,14.14213562,,Panel3_cross2,15.8113883,Panel3_cross2,15.5241747
+Panel3_circle3,17.2626765,Panel3_circle3,17.2626765,,Panel3_cross3,3.16227766,Panel3_cross3,4.123105626
+Panel3_circle4,17,Panel3_circle4,17,,Panel3_cross4,15.23154621,Panel3_cross4,15.23154621
+Panel4_circle1,4.242640687,Panel4_circle1,4.242640687,,Panel4_cross1,3.605551275,Panel4_cross1,3.605551275
+Panel4_circle2,7.071067812,Panel4_circle2,7.810249676,,Panel4_cross2,7.071067812,Panel4_cross2,7.071067812
+Panel4_circle3,5.656854249,Panel4_circle3,10.19803903,,Panel4_cross3,13.41640786,Panel4_cross3,13.41640786
+Panel4_circle4,13.60147051,Panel4_circle4,13.60147051,,Panel4_cross4,5.385164807,Panel4_cross4,5.385164807
