@@ -63,8 +63,8 @@ Using NCC and Pyramid strategy to deal with the template matching homework
    
    (6)   Save all results
 - Distance ( Group by different pattern : circle or cross )
-  - [File](https://github.com/podo47/Template-Matching/blobmain/match_circle_p/circle_pyramid_dis.csv) : match_circle_p/circle_pyramid_dis.csv
-  - [File](https://github.com/podo47/Template-Matching/blobmain/match_cross_p/cross_pyramid_dis.csv) : match_cross_p/cross_pyramid_dis.csv
+  - [File(Circle)](https://github.com/podo47/Template-Matching/blob/main/match_circle_p/circle_pyramid_dis.csv) : match_circle_p/circle_pyramid_dis.csv
+  - [File](https://github.com/podo47/Template-Matching/blob/main/match_cross_p/cross_pyramid_dis.csv) : match_cross_p/cross_pyramid_dis.csv
 - Result images 
   - [File(Circle)]() : match_circle_p/P{ 1-4 }_circle{ 1-4 }
   - [File(Cross)]() : match_cross_p/P{ 1-4 }_cross{ 1-4 }
