@@ -4,7 +4,7 @@ Using NCC and Pyramid strategy to deal with the template matching tasks
 [Click](https://github.com/podo47/Template-Matching/blob/main/Template_matching.ipynb) to read the code
 - [x] Calculate Normalized Correlation Coefficient (NCC)
 - [x] Speed up with Pyramid strategy
-- [x] Apply median filter to the image
+- [x] Apply median filter to the image for better performance
 - [x] Apply power law transform with gamma = 0.4 in special case 
 - [x] Draw the matching position on the picture
 - [x] Calculate the distance between the center position of border box and center pattern ( circle or cross ) in the image.
