@@ -28,7 +28,7 @@ from google.colab.patches import cv2_imshow
     *  Template_cross
     *  Template_BorderCircle
     *  Template_BorderCross
-*  Source images are in file : [circle]() or [cross]()
+*  Source images are in file : [circle](https://github.com/podo47/Template-Matching/tree/main/circle) or [cross](https://github.com/podo47/Template-Matching/tree/main/cross)
     *  Panel{ 1-4 }_circle{ 1-4 }
     *  Panel{ 1-4 }_cross{ 1-4 }
   
